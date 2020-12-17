@@ -1,140 +1,172 @@
-<html lang="en">
+﻿<html lang="en">
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>
-		<!-- TODO: Insert Name Here --> Portfolio</title>
-	<!-- This is a link to bootstrap-->
+		Matt Huebert Portfolio
+	</title>
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link href="style.css" rel="stylesheet">
 </head>
 
 <body>
-
-	<nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-spy="affix" data-offset-top="197">
+	
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark" data-spy="affix" data-offset-top="197" position: fixed;>
 		<a class="navbar-brand" href="#">My Portfolio</a>
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<!--<a class="nav-link" href="TODO: type your LinkedIn URL here">LinkedIn</a> -->
+				<a class="nav-link" href="https://www.linkedin.com/in/matthew-huebert-1a36ba4a/">LinkedIn</a> 
 			</li>
 			<li class="nav-item">
-				<!-- <a class="nav-link" href="TODO: type your github URL here">Github Profile</a>-->
+				<a class="nav-link" href="https://github.com/promobius">Github</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="https://www.youtube.com/channel/UCqP7yK_lO9OnvqSTvm55U8Q?view_as=subscriber">YouTube</a> 
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/img/Matt Huebert Resume.pdf">Resume</a> 
 			</li>
 		</ul>
 	</nav>
-
+	
 
 	<!-- BONUS -->
 	<!-- TODO: Create your own <div></div> here and give it a class name of "sidebar" example(class="sidebar") -->
-	<!-- TODO: Inside of it put a <p></p> tag and inside put some text example(<p>Type Lorem and hit tab twice</p>) -->
-	<!--<div class="sidebar">
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-			Optio dolorum iure cum perspiciatis sapiente iusto minus sint aliquam?
-			Et assumenda id doloremque quasi quaerat eligendi amet eius possimus maiores. Repudiandae?</p>
-		<div>
-			<ul>
-				<li>
-					<h4>Languages</h4>
-				</li>
-				<li>
-					<h4>Something</h4>
-				</li>
-				<li>
-					<h4>Something Else</h4>
-				</li>
-			</ul>
+	<div id="mySidebar" class="sidebar">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<h2 style="text-align:center;">Top 5 Gallop Strengths</h2>
+		<p>
+			<p style="color:azure; text-align:center; font-size:22; background-color:green;font-family:Verdana, Geneva, Tahoma, sans-serif;">
+				Strategic
+			</p>
+				People exceptionally talented in the Strategic theme create alternative ways to proceed. Faced with any given scenario, they can quickly spot the relevant patterns and issues.
+			</p>
+		<p>
+			<p style="color:azure; text-align:center; font-size:22; background-color:rgb(4, 71, 255);font-family:Verdana, Geneva, Tahoma, sans-serif;">
+				Relator
+			</p>
+				People exceptionally talented in the Relator theme enjoy close relationships with others. They find deep satisfaction in working hard with friends to achieve a goal.
+			</p>
+		<p>
+			<p style="color:azure; text-align:center; font-size:22; background-color:green;font-family:Verdana, Geneva, Tahoma, sans-serif;">
+				Ideation
+			</p>
+				People exceptionally talented in the Ideation theme are fascinated by ideas. They are able to find connections between seemingly disparate phenomena.
+			</p>
+		<p>
+			<p style="color:azure; text-align:center; font-size:22; background-color:green;font-family:Verdana, Geneva, Tahoma, sans-serif;">
+				Analytical
+			</p>
+				People exceptionally talented in the Analytical theme search for reasons and causes. They have the ability to think about all of the factors that might affect a situation.
+			</p>
+		<p>
+			<p>
+			<p style="color:azure; text-align:center; font-size:22; background-color:green;font-family:Verdana, Geneva, Tahoma, sans-serif;">
+				Learner
+			</p>
+				People exceptionally talented in the Learner theme have a great desire to learn and want to continuously improve. The process of learning, rather than the outcome, excites them.
+			</p>
+			<p>
+	</div>
+
+	
+
+	<div>
+		<button class="openbtn" onclick="openNav()">&#9776; See Gallop Strengths</button>	
+		
 		</div>
-		<div class="resume">
-		<h3 id="my-resume"><i>My Resume</i></h3>-->
-
-	<!-- TODO: Replace "TrueCoders Master Resume Template.pdf with YOUR resume pdf file"-->
-	<!--<a href="TrueCoders Master Resume Template.pdf" download><img src="/img/download-button.png"
-			id="download_button"></a>
-		</div>
-		</div>
-		<br>
-		<br>
-		<div class="collapse-button">
-			<p>use JavaScript to make sidebar collapsable</p>
-		</div>-->
+		<script>
+			function openNav(){
+				document.getElementById("mySidebar").style.width = "400px";
+				document.getElementById("main").Style.marginLeft = "150px";
+			}
+			function closeNav(){
+				document.getElementById("mySidebar").style.width = "10";
+  				document.getElementById("main").style.marginLeft= "10";
+			}
+		</script>
 
 
 
-	< <div class="container">
+	 <div class="container">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
-					<!-- We use "col-sm-'x' as a bootstrap column class -->
-					<!-- TODO: Try changing the number here from "col-sm-4" to "col-sm-6" and see how it changes the document -->
-					<h3><b>Your Picture Goes Here</b></h3>
-					<img src="/img/profile-pic.png">
+				<div class="col-sm-3">
+					
+					
+					<img src="me.jpg" width="275" height="360">
 				</div>
-				<div class="col-sm-6">
-					<h3><b>About Me</b></h3>
-					<p>
-						<!-- TODO: type a brief summary of yourself here -->
+
+				<div class="col-sm-5">
+					<h3 style="text-align: center;"><b>About Me</b></h3>
+					<p class="box">
+						Hello! My name is Matt Huebert, I am a Software Developer currently looking for new opportunities. If you are viewing this page, congradulations, you found me!
+						You can view my credentials and relevant social media from this page. If I am not in front of my computer working (or playing) you will most likely find me on a 
+						trail or at a local eatery. If you would like to know more about me please feel free to reachout! 
+
 					</p>
 				</div>
 
-				<!-- TODO: You can add or remove as many tags that you need to-->
-				<div class="col-sm-2">
+				
+				<div class="col-sm-4">
 					<h3><b>Contact Me</b></h3>
 					<ul>
-						<li>
-							<!-- TODO: type your cell number here-->
+						<li style="margin-bottom: 10;">
+							<img src="/img/phone1.png"> (972) 415.3857
 						</li>
-						<li>
-							<!-- TODO: type your email here-->
+						
+
+						<li style="margin-bottom: 10;">
+							<img src="img/email.png"> Matt.Huebert@gmail.com
 						</li>
+
 						<li>
-							<!-- TODO: type your address here-->
+							<img src="img/Home.png" Align="left"> <p>153 Summerbrook <br> Alabaster, Al 35007</p>
 						</li>
 					</ul>
 				</div>
+				
 			</div>
 		</div>
 
-		<!-- TODO: You can add or remove as many tags that you need to-->
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-9">
 					<h2><b>Work Experience</b></h2>
 					<ul>
 						<li>
-							<!-- TODO: Type your work experience here inside the <li> tags -->
+							<b>Food Service Team Leader ,</b>  Target Corporation - <i>2020-Present</i>
 						</li>
 						<li>
-							<!-- TODO: Type your work experience here inside the <li> tags -->
+							<b>Kitchen Manager ,</b> Pappadeaux Seafood Kitchen - <i>2014-2019</i>
 						</li>
 						<li>
-							<!-- TODO: Type your work experience here inside the <li> tags -->
+							<b>Manager ,</b>  J. Alexanders - <i>2014-2014</i>
 						</li>
 					</ul>
 				</div>
-				<div class="col-sm-3">
-					<!-- TODO: add another section here if you would like to <h2> Title </h2> -->
-				</div>
+				
 			</div>
 
 			<div class="container">
 				<div class="row">
 					<div class="project1">
+						<h2><b>Portfolio Snapshot<b></b></h2>
 						<p><b>Best Buy CRUD Database Website: C# | ASP.NET Core MVC | SQL | HTML | CSS | JavaScript</b>
 						</p>
 						<ul>
 							<li>
-								<!-- TODO: Type a summary of your project here (it doesn't HAVE to be at least 4 list items)-->
+								Created an ASP.NET site to view a product database
 							</li>
 							<li>
-								<!-- TODO: Type a summary of your project here (it doesn't HAVE to be at least 4 list items)-->
+								Added a search feature for user input
 							</li>
 							<li>
-								<!-- TODO: Type a summary of your project here (it doesn't HAVE to be at least 4 list items)-->
-							</li>
-							<li>
-								<!-- TODO: Type a summary of your project here (it doesn't HAVE to be at least 4 list items)-->
+								Created methods to add, update, and delete products in the database from the site.
 							</li>
 						</ul>
 						</disv>
@@ -142,48 +174,38 @@
 						<div class="project2">
 							<p><b>Tacobell Geolocator: C# | .NET Core | SQL | xUnit</b></p>
 							<ul>
-								<!-- TODO: You can add or remove as many tags that you need to-->
 								<li>
-									<!-- TODO: Type a summary of your project here -->
+									Program that evaluates the distance between locations
 								</li>
 								<li>
-									<!-- TODO: Type a summary of your project here -->
+									Parsed data into workable segments with Geolocation
 								</li>
 								<li>
-									<!-- TODO: Type a summary of your project here -->
+									Created methods to utilze Geolocation and test each data point
 								</li>
-								<li>
-									<!-- TODO: Type a summary of your project here -->
-								</li>
+								
 							</ul>
 						</div>
-
+						
 						<div class="project3">
-							<p><b>KanyeREST: C# | .NET Core | JSON | API</b></p>
+							<p><b>QuickJokes: C# | .NET Core | JSON | API | XAML</b></p>
 							<ul>
-								<!-- TODO: You can add or remove as many tags that you need to-->
+								
 								<li>
-									<!-- TODO: Type a summary of your project here -->
+									Built an app that gives displays simple jokes
 								</li>
 								<li>
-									<!-- TODO: Type a summary of your project here -->
+									Integrated various API's to source jokes
 								</li>
 								<li>
-									<!-- TODO: Type a summary of your project here -->
-								</li>
-								<li>
-									<!-- TODO: Type a summary of your project here -->
+									Created a front end UI that allows users to pick categories
 								</li>
 							</ul>
 						</div>
 					</div>
 				</div>
 
-
-				<div class="row">
-					<!-- TODO: Replace what's inside the <p> tag and add any extra information you think is relavent here. For example (awards, certifications, recommendations)-->
-					<p></p>
-				</div>
+				
 
 
 
@@ -193,7 +215,7 @@
 				<!--- Footer -->
 				<div class="footer">
 					<!-- TODO: Replace and type your footer here -->
-					<p>TrueCoders Portfolio Website Template © 2020
+					<p>Matt Huebert Personal Site
 					</p>
 				</div>
 				<br>
